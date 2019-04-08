@@ -142,21 +142,15 @@
 
     .dininCol1{
       width:75%;
-      top:23%;
+      top:19%;
       left:15%;
 
     }
 
     .dininCol2{
       width:73%;
-      top:30%;
-      left:13%;
-    }
-
-    .dininCol3{
-      width:73%;
-      top:25%;
-      left:13%;
+      top:23%;
+      left:23%;
     }
 
     .homeButton{
@@ -178,12 +172,6 @@
     }
 
     .dininCol2{
-      width:73%;
-      top:30%;
-      left:13%;
-    }
-
-    .dininCol3{
       width:73%;
       top:30%;
       left:13%;
@@ -213,12 +201,6 @@
       left:13%;
     }
 
-    .dininCol3{
-      width:73%;
-      top:30%;
-      left:13%;
-    }
-
   }
 
   /* if less than or equal to 768px */
@@ -237,12 +219,6 @@
       left:13%;
     }
 
-    .dininCol3{
-      width:73%;
-      top:30%;
-      left:13%;
-    }
-
   }
 
   /* if less than or equal to 576px */
@@ -254,7 +230,7 @@
 
     }
 
-    .dininCol1, .dininCol2, .dininCol3{
+    .dininCol1, .dininCol2{
       display:none;
     }
 

@@ -35,11 +35,67 @@
       overflow-y: hidden;
     }
 
+
+        /* Center the loader */
+        #loader {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          z-index: 1;
+          width: 150px;
+          height: 150px;
+          margin: -75px 0 0 -75px;
+          border: 16px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 16px solid #d7ad55;
+          width: 120px;
+          height: 120px;
+          -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 1s;
+          animation-name: animatebottom;
+          animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+          from { bottom:-100px; opacity:0 }
+          to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom {
+          from{ bottom:-100px; opacity:0 }
+          to{ bottom:0; opacity:1 }
+        }
+
+        #myDiv {
+          display: none;
+          text-align: center;
+        }
+
+
   </style>
 
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0";>
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
 
   <div class="container-fluid no-padding">
 
@@ -69,6 +125,7 @@
             <img src="img/farminCol1.svg" class="farminColMobile1">
             <img src="img/farminCol2.svg" class="farminColMobile2">
             <img src="img/farminCol3.svg" class="farminColMobile3">
+            <img src="img/farminCopyMobile.svg" class="farminColMobile4">
 
             </div>
           </div>
@@ -87,7 +144,7 @@
             <!--DESKTOP-->
             <div class=" bottomCol col-xs-16">
             <img src="img/farminCol3.svg" class="farminCol3">
-            <div align="left" class="farminCopy">Cattle raised in small, confined spaces produce highly concentrated <br> areas of bodily waste on farms. When it rains, runoff water can carry <br> harmful contaminants from these areas into local rivers. In fact, a U.S.<br>Environmental Protection Agency report states that farm animal waste<br>has already polluted 35,000 miles of rivers in 22 states and contaminated<br> groundwater across the country. In New Zealand, this effect has been<br> coined “dirty dairying”.”
+            <div align="left" class="farminCopy">Cattle raised in small, confined spaces produce highly concentrated <br> areas of bodily waste on farms. When it rains, runoff water can carry <br> harmful contaminants from these areas into local rivers. In fact, a U.S.<br>Environmental Protection Agency report states that farm animal waste<br>has already polluted 35,000 miles of rivers in 22 states and contaminated<br> groundwater across the country. In New Zealand, this effect has been<br> coined “dirty dairying."
             </div>
 
             </div>
@@ -108,6 +165,7 @@
 
 </div>
 </div>
+</div>
 
 <!--Border Divs -->
 <div id="left"></div>
@@ -122,6 +180,23 @@
       <!-- Initialize JS 16 col bootstrap -->
       <script src="js/bootstrap.min.js"></script>
       <script src="js/bootstrap.js"></script>
+
+      <!-- Initialize JS 16 col bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+
+      <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 400);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+      </script>
 </body>
 
 </html>

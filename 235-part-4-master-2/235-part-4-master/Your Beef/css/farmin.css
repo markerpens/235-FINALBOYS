@@ -113,7 +113,7 @@
     }
 
     .farminCol3{
-      width:73%;
+      width:74%;
       position:absolute;
       top:13%;
       left:15%;
@@ -131,13 +131,13 @@
 
     /*Manipulate MULTILINE div from index, condenses font into multiple lines and moves it to the right */
     .farminCopy {
-      font-size:1em;
+      font-size:1.2em;
       font-family: 'crimson_text_semibold';
 
 
       position:absolute;
       top:32%;
-    	left:17%;
+    	left:16%;
       width: 82.5%;
       margin-left: auto;
       margin-right: auto;
@@ -154,7 +154,7 @@
   }
 
   /* Don't display mobile images on desktop */
-  .farminColMobile1, .farminColMobile2, .farminColMobile3{
+  .farminColMobile1, .farminColMobile2, .farminColMobile3, .farminColMobile4{
     display:none;
   }
 
@@ -188,14 +188,16 @@
   @media (max-width:1200px){
 
     .farminCol1{
-      width:80%;
-      left:18%;
+      width:60%;
+      left:28%;
+      top:20%;
 
     }
 
     .farminCol2{
-      width:73%;
-      left:18%;
+      width:53%;
+      left:28%;
+      top:10%;
     }
 
     .homeButton{
@@ -203,20 +205,30 @@
       left:91%;
       top:2%;
     }
+
+    .farminCopy{
+      font-size:0.8em;
+    }
   }
 
   /* if less than or equal to 992px */
   @media (max-width:992px){
 
     .farminCol1{
-      width:80%;
-      left:18%;
+      width:60%;
+      left:28%;
+      top:20%;
 
     }
 
     .farminCol2{
-      width:73%;
-      left:18%;
+      width:53%;
+      left:28%;
+      top:10%;
+    }
+
+    .farminCopy{
+      font-size:0.7em;
     }
 
   }
@@ -225,14 +237,20 @@
   @media (max-width:768px){
 
     .farminCol1{
-      width:80%;
-      left:18%;
+      width:60%;
+      left:28%;
+      top:25%;
 
     }
 
     .farminCol2{
-      width:73%;
-      left:18%;
+      width:53%;
+      left:28%;
+      top:20%;
+    }
+
+    .farminCopy{
+      font-size:0.6em;
     }
 
   }
@@ -242,21 +260,24 @@
 
     .container-fluid{
     	overflow-x: hidden;
-    	overflow-y: hidden;
-
+    	overflow-y: scroll;
     }
 
-    .farminCol1, .farminCol2{
+    div{
+      overflow: auto;
+    }
+
+    .farminCol1, .farminCol2, .farminCol3{
       display:none;
     }
 
     .farminColMobile1{
       display:block;
 
-      width:100%;
+      width:80%;
       position:absolute;
-      left:8%;
-      top:10%;
+      left:18%;
+      top:5%;
 
       margin-left: auto;
       margin-right: auto;
@@ -266,9 +287,33 @@
     .farminColMobile2{
       display:block;
 
+      width:70%;
+      position:absolute;
+      top:36%;
+      left:18%;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .farminColMobile3{
+      display:block;
+
       width:90%;
       position:absolute;
-      top:49%;
+      top:73%;
+      left:8%;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .farminColMobile4{
+      display:block;
+
+      width:80%;
+      position:absolute;
+      top:96%;
       left:8%;
 
       margin-left: auto;

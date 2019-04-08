@@ -102,10 +102,10 @@
     }
 
     .killinCol2{
-      width:60%;
+      width:80%;
       position:absolute;
-      top:22%;
-      left:22%;
+      top:10%;
+      left:10%;
 
       margin-left: auto;
       margin-right: auto;
@@ -274,10 +274,10 @@
     .killinColMobile2{
       display:block;
 
-      width:85%;
+      width:120%;
       position:absolute;
-      top:42%;
-      left:8%;
+      top:38%;
+      left:-13%;
 
       margin-left: auto;
       margin-right: auto;
@@ -288,7 +288,7 @@
 
       width:85%;
       position:absolute;
-      top:67%;
+      top:73%;
       left:8%;
 
       margin-left: auto;
