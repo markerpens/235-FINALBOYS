@@ -1,0 +1,484 @@
+/* Creates borders encapsulating the screen, COPY PASTE BOYS */
+#top, #bottom, #left, #right {
+	background: #F7F5F2;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+/* Setup Background Image */
+body{
+  background-image: url("../img/background-primary.png");
+
+}
+
+/* Eliminate scroll bar */
+html {
+	overflow:hidden;
+	cursor: url(http://cur.cursors-4u.net/others/oth-8/oth704.cur), auto !important;
+}
+
+::-webkit-scrollbar {
+	display:none;
+}
+
+
+/* Manipulate the width of columns */
+.container-fluid {
+  display:inline-block;
+  overflow: hidden;
+
+	position: relative;
+}
+
+
+div{
+	width:178vw;
+	height:100vh;
+}
+
+/* Makes all rows the same height */
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+
+	height: 120vh;
+
+	background-image: url('semi_circle.png');
+	background-size: cover;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Setup fonts */
+@font-face {
+font-family: 'Anton-Bold';
+src: url(../fonts/anton/Anton-Bold.otf);
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Futura';
+src: url(../fonts/futura/Futura_Bold.otf);
+font-style: normal;
+}
+
+@font-face {
+font-family: 'crimson_text';
+src: url(../fonts/crimson_text/CrimsonText-Regular.otf);
+font-style: normal;
+}
+
+@font-face {
+font-family: 'crimson_text_semibold';
+src: url(../fonts/crimson_text/CrimsonText-Semibold.otf);
+font-style: normal;
+}
+
+/*Manipulate H4 Headers from index */
+.container-fluid h4 {
+  font-size: 4em;
+  text-align: center;
+  padding-top: 20%;
+  font-family: 'Anton-Bold';
+
+	position:absolute;
+	top:5%;
+	left:8%;
+	width: 82.5%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 9%;
+	padding-bottom:25%;
+}
+
+.farmin-header{
+  color: #f3cf55;
+}
+
+.killin-header{
+  color: #f5b97e;
+}
+
+.truckin-header{
+  color: #de967c;
+}
+
+.dinin-header{
+  color: #be6c4f;
+}
+
+/* These are the headers with the diamond bullets on each sides */
+.container-fluid h6 {
+  text-align:center;
+  padding-top: 4%;
+  font-size:0.65em;
+  font-family: 'Futura';
+
+  letter-spacing:3px;
+
+	position:absolute;
+	top:25%;
+	left:8%;
+	width: 82.5%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 9%;
+	padding-bottom:25%;
+}
+
+/*Manipulate MULTILINE div from index, condenses font into multiple lines and moves it to the right */
+.multiline {
+  white-space: pre-wrap;
+  font-size:0.9em;
+  font-family: 'crimson_text';
+
+
+  position:absolute;
+  top:32%;
+	left:8%;
+  width: 82.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+	padding-bottom:25%;
+}
+
+/*Manipulate MULTILINE div from index, condenses font into multiple lines and moves it to the right */
+.multiline-main {
+  white-space: pre-wrap;
+  font-size:0.9em;
+  font-family: 'crimson_text';
+
+  width: 82.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+	padding-bottom:25%;
+}
+
+/*Eliminates white bleed effect*/
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/*Manipulate size and pos of images on home page*/
+
+/*Cow Title Image*/
+.img-fluid-cow-title {
+  max-width: 36%;
+	padding-top:9%;
+}
+
+/* Position of NO 1 - NO 4 */
+.img-fluid-numbers {
+  max-width:12%;
+  padding-top:15%;
+}
+
+/* Cow Column Image */
+.img-fluid-cow-col {
+  max-width: 100%;
+
+	position:absolute;
+  top:55%;
+	left:7%;
+  width: 82.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+	padding-bottom:25%;
+}
+
+/* Knife Column Image */
+.img-fluid-knife {
+  max-width: 50%;
+
+	position:absolute;
+  top:55%;
+	left:25%;
+  width: 82.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+	padding-bottom:25%;
+}
+
+/* Truck Column Image */
+.img-fluid-truck {
+  max-width: 70%;
+
+	position:absolute;
+  top:55%;
+	left:13%;
+  width: 82.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+	padding-bottom:25%;
+}
+
+/* Steak Column Image */
+.img-fluid-steak {
+  max-width: 50%;
+
+	position:absolute;
+  top:55%;
+	left:25%;
+  width: 82.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+	padding-bottom:25%;
+
+}
+
+/* MANIPULATE POS OF SEMI CIRCLES */
+.img-fluid-semi-circle-cow-col{
+  width:101%;
+	height:500px !important;
+
+
+	position:absolute;
+	top: 51%;
+	left:0.2%;
+
+}
+
+.img-fluid-semi-circle-knife-col{
+	width:101%;
+	height:500px !important;
+
+	position:absolute;
+	top: 51%;
+	left:0.2%;
+}
+
+.img-fluid-semi-circle-truck-col{
+  width:101%;
+	height:500px !important;
+
+	position:absolute;
+	top: 51%;
+	left:0.2%;
+}
+
+.img-fluid-semi-circle-steak-col{
+  width:111%;
+	height:500px !important;
+
+	position:absolute;
+	top: 50.5%;
+	left:0.2%;
+}
+
+/* Setup background colors for each column */
+.farminCol{
+  background-color: #d7ad55;
+	transition: all .2s ease-in-out;
+}
+
+.killinCol{
+  background-color: #d08c57;
+	transition: all .2s ease-in-out;
+}
+
+.truckinCol{
+  background-color: #bd6c4e;
+	transition: all .2s ease-in-out;
+}
+
+.dininCol{
+  background-color: #a25b3f;
+	transition: all .2s ease-in-out;
+}
+
+.farminCol:hover, .killinCol:hover, .truckinCol:hover, .dininCol:hover{
+transform: scale(1.1);
+}
+
+/* Create 2px kerning for bottom text below images */
+.container-fluid h5{
+  letter-spacing: 2px;
+}
+
+/* Bottom text below images */
+.raise-em-well{
+  text-align: center;
+  font-family: 'crimson_text_semibold';
+  font-size:1.1em;
+
+	position:absolute;
+  top:85%;
+	left:10%;
+  width: 82.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+	padding-bottom:25%;
+
+}
+
+.kill-n-spill{
+  text-align: center;
+  font-family: 'crimson_text_semibold';
+  font-size:1.1em;
+
+	position:absolute;
+  top:85%;
+	left:10%;
+  width: 82.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+	padding-bottom:25%;
+
+}
+
+.pedal-to-metal{
+  text-align: center;
+  font-family: 'crimson_text_semibold';
+  font-size:1.1em;
+
+	position:absolute;
+  top:85%;
+	left:10%;
+  width: 82.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+	padding-bottom:25%;
+
+}
+
+.dinner-time{
+  text-align: center;
+  font-family: 'crimson_text_semibold';
+  font-size:1.1em;
+
+	position:absolute;
+  top:85%;
+	left:10%;
+  width: 82.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+	padding-bottom:25%;
+
+}
+
+/* MEDIA QUERIES AND SHAAAA */
+
+/* If screen is less than or equal to 1200px, then do */
+@media (max-width:1440px)
+{
+	.img-fluid-cow-title{max-width:60%;}
+	.multiline, .multiline-main {font-size: 1.1em;}
+
+	div{
+		width:235vw;
+	}
+
+}
+
+/* If screen is less than or equal to 1200px, then do */
+@media (max-width:1200px)
+{
+	.img-fluid-cow-title{max-width:35%;}
+	.multiline, .multiline-main {font-size: 0.9em;}
+
+	div{
+		width:240vw;
+	}
+
+}
+
+/* If screen is less than or equal to 992px, then do */
+@media (max-width:992px)
+{
+	.img-fluid-cow-title{max-width:46%;}
+	.multiline, .multiline-main {font-size: 0.8em;}
+
+}
+
+/* If screen is less than or equal to 576, then do */
+@media (max-width: 768px){
+
+	.img-fluid-cow-title{max-width:46%;}
+	.multiline {font-size:0.75em;}
+  .multiline-main {font-size:0.70em;}
+
+  div{
+		width:270vw;
+  }
+
+}
+
+/* If screen is less than or equal to 576, then do, then do {}” */
+@media (max-width: 576px) {
+  .multiline {font-size:0.75em;}
+  .multiline-main {font-size:0.70em;}
+	.img-fluid-cow-title{min-width:100%;}
+
+  div{
+		width:auto;
+		height:82%;
+  }
+
+	.container-fluid{
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+
+  /* Remove Semi Circle in Mobile View */
+  .img-fluid-semi-circle-cow-col{
+    display:none;
+  }
+
+  .img-fluid-semi-circle-knife-col{
+    display:none;
+  }
+
+  .img-fluid-semi-circle-truck-col{
+    display:none;
+  }
+
+  .img-fluid-semi-circle-steak-col{
+	 display:none;
+  }
+
+  /* Remove border in Mobile View */
+  body {
+    border-width:0;
+  }
+
+  #top, #bottom, #left, #right {
+    display: none;
+  }
+}
+
+#wrapper {
+    position: absolute;
+    border: 6px solid white;
+}
+
+#intro-text {
+    margin-top: 1%;
+}
